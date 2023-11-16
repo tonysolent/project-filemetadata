@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My File Analyzer</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css" />
+    <link href="/public/my-style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Welcome to My File Analyzer</h1>
+
+      <h2>File Upload</h2>
+      <p>
+        Please select a file to analyze...
+      </p>
+      <div class="upload-form">
+        <h3>Upload a File</h3>
+        <form enctype="multipart/form-data" method="POST" action="/api/analyzefile">
+          <input id="file-input" type="file" name="upfile">
+          <input id="upload-button" type="submit" value="Analyze">
+        </form>
+      </div>
+    </div>
+    <div class="footer">
+      <p>
+        Created by 
+        <a href="https://www.mywebsite.com">Your Name</a>
+      </p>
+    </div>
+  </body>
+</html>
